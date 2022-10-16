@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# make setup.sh executable, just in case it isn't already
-chmod u+x setup.sh
-
 # download face mask dataset and install required packages
-./setup.sh
+sh setup.sh
 
 # convert data to correct format, split into training and validation sets and move files to expected directories
 python prepare_data.py
